@@ -32,13 +32,21 @@
             height: 150px;
         }
 
-        /* 🌟 Make header content vertical and centered */
+        /* Header layout: title on top, images in a row */
         header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px; /* space between items */
+            gap: 10px;
             margin-bottom: 20px;
+        }
+
+        /* Row for the two images */
+        .image-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
         }
 
         /* Green content box */
@@ -54,13 +62,15 @@
 
 <body>
 
-    <img src="https://wallpaperaccess.com/full/2365862.jpg" 
-         alt="this was an image of a village in LOTR"/>
-
     <header>
         <h1>The World Inside My Head Explained</h1>
-        <img src="https://wallpapers.com/images/hd/wings-of-fire-1800-x-1000-picture-ppyko1yi6m1iton5.jpg" 
-             alt="this was an image of WINGS OF FIRE Escape from Peril"/>
+
+        <div class="image-row">
+            <img src="https://wallpapers.com/images/hd/wings-of-fire-1800-x-1000-picture-ppyko1yi6m1iton5.jpg" 
+                alt="this was an image of WINGS OF FIRE Escape from Peril"/>
+            <img src="https://wallpaperaccess.com/full/2365862.jpg" 
+                alt="this was an image of a village in LOTR"/>
+        </div>
     </header>
 
     <main>
