@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block body %}{% endblock %}</title>
+    <style>
+
+        #nav {
+            margin-bottom: 20px;
+        }
+        #nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color:rgb(202, 115, 9)
+            
+        }
+        #nav a:hover{
+        text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <a href="/">home</a> <p> | </p>
+        <a href="/contact"></a> <p> | </p>
+        <a href="/about"></a> <p> | </p>
+    </div>
+    {% block body %}{% endblock %}
+</form>
+    <img src="https://th.bing.com/th/id/ODL.ccb05fe8eecaea59551a963d3a1b931e?w=310&h=198&c=7&rs=1&bgcl=ffff14&r=0&o=6&pid=AlgoBlockDebug"
+    alt ="lightning">
+</body>
+</html>

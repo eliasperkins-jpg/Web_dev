@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>First Flask</h1>
+{% extends "base.html" %}
+{% block content %}Home - Flask{% endblock %}
+
+{% block body %}
+    <h1>Home Page</h1>
     <form method="POST">
     <label for="name">Enter your name</label>
     <input type="text" name="name">
@@ -16,3 +12,4 @@
     alt ="lightning">
 </body>
 </html>
+{% endblock %}
