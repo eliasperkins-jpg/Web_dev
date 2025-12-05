@@ -1,0 +1,59 @@
+#fi{
+    width: 50vw;
+    height:500px;
+}
+#one-a{
+    width: 350px;
+    height: 250px;
+}
+#two-a{
+    width: 350px;
+    height: 250px
+}
+#three-a{
+    width: 350px;
+    height: 250px;
+}
+img{
+    margin:15px;
+    padding:10px; 
+}
+h4{
+    padding:15px;
+}
+
+h1{
+    padding:10px;
+}
+li{
+    padding:5px;
+}
+p{
+    font-family: cursive, serif;
+    font-weight: 750;
+    font-style: normal;
+    padding:15px;
+}
+h1{
+    font-family: cursive, serif;
+    font-weight: 750;
+    font-style: normal;
+    padding:25px;
+    
+}
+h4{
+    font-family: cursive, serif;
+    font-weight: 750;
+    font-style: normal;
+    padding:25px;
+    
+}
+body{
+    background-color: rgb(105, 105, 210);
+    color: rgb(36, 10, 60);
+    align-items: center;
+}
+#ss{
+    display:flex;
+    align-items: center;
+}
