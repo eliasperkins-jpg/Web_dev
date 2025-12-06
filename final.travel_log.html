@@ -1,65 +1,137 @@
-
+<!--EP 6th Final Travel log LaRose-->
 <!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Bonnevile, Utah, the Salt Flats</title>
+        <title>Bonneville, Utah, the Salt Flats</title>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
         
         <style> 
-
-                
-            body{
+            body {
+                font-family: "Macondo", cursive;
                 background-color: rgb(138, 55, 0);
                 margin: 35px;
                 margin-top: 40px;
-
                 padding: 50px;
-.luxurious-roman-regular {
-  font-family: "Luxurious Roman", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
             }
-h1 {
-color: rgba(255, 164, 90, 0.918);
-text-align: center;
 
-}
-p {
-font-size: 16px;
-color: rgb(8, 48, 94);
+            h1 {
+                color: rgba(255, 164, 90, 0.918);
+                text-align: center;
+            }
 
-}
-img {
-width: 19.5%;
-+
-height: 170px;
-display: row-center;
-justify-content: center
-}
+            p {
+                font-size: 16px;
+                color: rgb(250, 204, 0);
+            }
 
+            .image-container {
+                display: flex;
+                justify-content: space-between;
+                gap: 1%;
+                width: 100%;
+            }
 
+            img {
+                width: 19%;
+                height: 170px;
+                object-fit: cover;
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+
+            #lastImage {
+                cursor: pointer;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #ff6b35;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-family: "Macondo", cursive;
+                margin-top: 20px;
+            }
+
+            button:hover {
+                background-color: #ff8555;
+            }
+
+            #hiddenParagraph {
+                margin-top: 20px;
+                padding: 15px;
+                background-color: rgba(255, 164, 90, 0.3);
+                border-left: 4px solid rgba(255, 164, 90, 0.918);
+            }
+
+            .content-row {
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+                align-items: flex-start;
+            }
+
+            .content-row p {
+                flex: 1;
+            }
+
+            .content-row div {
+                flex: 1;
+            }
+
+            h2 {
+                color: rgba(255, 164, 90, 0.918);
+            }
         </style>
     </head>
     <body>
         <div id="Header" style="color:rgb(196, 62, 0)">
-        <h1>Utah, Home of wonderful deserts, arches, and flats.</h1>
-        <img src="https://media.istockphoto.com/id/608540142/photo/salt-lake-salt-flats-salt-lake-city-utah-usa.jpg?s=612x612&w=0&k=20&c=9ePsYN4EDnFCrZcl84Ga-NgmnPyTMKfvdJbLNF60aRs=" alt="Bonnevile Salt Flats Sunset"
-        height="250px"/>
-        <img src="https://i.pinimg.com/originals/25/5e/6d/255e6d2cd1a377cc8f636ea914f9f1be.jpg" alt="Bonnevile Salt Flats Sunset"
-        height="250px"/>
-        <img src="https://images.squarespace-cdn.com/content/v1/5f9af6090c0a7348fa94da7e/1607232231188-WX8N7XRMFT1FVAJD3NQZ/IMG_2467-22.jpg" alt="Bonnevile Salt Flats Sunset"
-        height="250px"/>
-        <img src="https://tse1.mm.bing.net/th/id/OIP.CGVc_3Zj2lhQxzYvX0EbQQHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bonnevile Salt Flats Sunset"
-        height="250px"/>
-        <img src="https://mainstreamadventures.com/wp-content/uploads/2024/01/d8-2.jpg" alt="Bonnevile Salt Flats Sunset"
-        height="250px"/>
-        <h1>Attractions</h1>
-        <p>jjjjj
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+            <h1>Utah, Home of wonderful deserts, arches, and flats.</h1>
+            
+            <div class="image-container">
+                <img src="https://media.istockphoto.com/id/608540142/photo/salt-lake-salt-flats-salt-lake-city-utah-usa.jpg?s=612x612&w=0&k=20&c=9ePsYN4EDnFCrZcl84Ga-NgmnPyTMKfvdJbLNF60aRs=" alt="Bonneville Salt Flats Sunset"/>
+                <img src="https://i.pinimg.com/originals/25/5e/6d/255e6d2cd1a377cc8f636ea914f9f1be.jpg" alt="Bonneville Salt Flats Sunset"/>
+                <img src="https://images.squarespace-cdn.com/content/v1/5f9af6090c0a7348fa94da7e/1607232231188-WX8N7XRMFT1FVAJD3NQZ/IMG_2467-22.jpg" alt="Bonneville Salt Flats Sunset"/>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.CGVc_3Zj2lhQxzYvX0EbQQHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bonneville Salt Flats Sunset"/>
+                <img src="https://mainstreamadventures.com/wp-content/uploads/2024/01/d8-2.jpg" alt="Bonneville Salt Flats Sunset" id="lastImage" onmouseover="this.src='https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/idyllic-view-of-bonneville-salt-flats-against-sky-during-night-cavan-images.jpg'" onmouseout="this.src='https://mainstreamadventures.com/wp-content/uploads/2024/01/d8-2.jpg'"/>
+            </div>
+            
+            <h1>Attractions</h1>
+            
+            <div class="content-row">
+                <p>Bonneville is a beautiful place to spend your time, specifically the salt flats. You can spend hours enjoying the desolate yet brilliant scenery in the watery reflections and the grandiose mountains behind them. However, going to Bonneville could be dangerous if you don't know what you're doing because of the extreme conditions and the water sometimes making the salt flats into a slip and slide that might damage your car if you aren't careful.</p>
+                
+                <div>
+                    <h2>Activities to enjoy at the salt flats</h2>
+                    <ul>
+                        <li>Leisure Drives with proper safety precautions.</li>
+                        <li>Salt Flat Races</li>
+                        <li>Photography and enjoyment of the scenery</li>
+                        <li>Learning opportunities about how the salt flats were formed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button onclick="toggleParagraph()">Rating by Author(Hide/Show) </button>
+
+            <p id="hiddenParagraph">This place is one of the most awe inspiring places I have ever seen in my life. The pristine feel of it all makes me feel like I'm walking in a land of pure crystal that shines with the sky's own coloring but even more vibrant.</p>
+        </div>
+
+        <script>
+            function toggleParagraph() {
+                var paragraph = document.getElementById("hiddenParagraph");
+                if (paragraph.style.display === "none") {
+                    paragraph.style.display = "block";
+                } else {
+                    paragraph.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
+<!--THANK YOU TO THE TUTORIALS THAT SAVED ME ON MULTIPLE OCCASIONS-->
